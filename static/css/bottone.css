@@ -1,0 +1,11 @@
+.bottone {
+    position:absolute;
+    font-size: 50px;
+    color: white;
+    background-color: red;
+    border: 8px solid red;
+    border-radius: 15px;
+    margin-right: 80%;
+
+
+}

@@ -1,0 +1,61 @@
+.colonna {
+    background-color: white;
+    width: 100px;
+    height: 500px;
+    position:absolute;
+    border-radius: 20px;
+
+
+
+}
+.colonna1{
+    
+    margin-left: -600px;
+
+}
+.colonna2{
+    
+    margin-left: -300px;
+}
+.colonna3{
+    
+    margin-left: 0px;
+}
+.colonna4{
+    
+    margin-left: 300px;
+
+}
+.colonna5{
+    
+    margin-left: 600px;
+}
+
+.primastriscia{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+.secondastriscia{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+.terzastriscia{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+.quartastriscia{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 20px;
+}
