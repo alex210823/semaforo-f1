@@ -7,10 +7,10 @@ function getRandom(min=0, max=100) {
 }
 getRandom(1000,2000)
 
-let striscia1=document.querySelectorAll("[class=primastriscia]")
-let striscia2=document.querySelectorAll("[class=secondastriscia]")
-let striscia3=document.querySelectorAll("[class=terzastriscia]")
-let striscia4=document.querySelectorAll("[class=quartastriscia]")
+let striscia1=document.querySelector(".primastriscia");
+let striscia2=document.querySelector(".secondastriscia")
+let striscia3=document.querySelector(".terzastriscia")
+let striscia4=document.querySelector(".quartastriscia")
 
 function primastriscia(){
     striscia1.classList.add("rossoBg")
@@ -38,6 +38,8 @@ function quartastriscia(){
     setTimeout(verde,n) 
 }
 function verde(){
+    let date=new Date()
+    tempo=date.getTime()
     striscia1.classList.remove("rossoBg")
     striscia2.classList.remove("rossoBg")
     striscia3.classList.remove("rossoBg")
@@ -48,6 +50,22 @@ function verde(){
     striscia4.classList.add("verdeBg")
 }
 setTimeout(primastriscia, 1000);
+
+function callback(event){
+    let date= new Date()
+    mioTempo=date.getTime()
+    console.log("time" + tempo)
+    console.log("miotempo" + mioTempo)
+    console.log((mioTempo-tempo)/1000) //espressione per vedere dopo quanti secondi ho cliccato il bottone
+    
+
+}
+
+let mioTempo
+let tempo
+
+let button=document.querySelector(".bottone") 
+button.addEventListener("click", callback)
 
 
 
